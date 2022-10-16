@@ -1,10 +1,13 @@
 import './App.css';
+import { Login } from './Login';
+import { Register } from './Register';
 
 function App() {
   return (
-   <div>
-    Hello World
-   </div>
+    <div>
+      {/* <Register /> */}
+      <Login/>
+    </div>
   );
 }
 
