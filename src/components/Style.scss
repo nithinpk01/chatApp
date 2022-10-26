@@ -86,6 +86,7 @@
 
       .logo {
         font-weight: bold;
+        color: #ffff;
       }
 
       .user {
@@ -100,6 +101,11 @@
           object-fit: cover;
         }
 
+        span {
+          padding: 2px;
+          color: #ffff;
+        }
+
         button {
           background-color: #5d5bBd;
           color: #ddddf7;
@@ -109,11 +115,81 @@
         }
       }
     }
+
+    .search {
+      border-bottom: 1px solid grey;
+
+      .searchForm {
+        padding: 10px;
+
+        input {
+          background-color: transparent;
+          border: none;
+          color: #ffff;
+          outline: none;
+
+          &::placeholder {
+            color: lightgrey;
+          }
+        }
+      }
+
+    }
+
+    .userChat {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+
+      &:hover {
+        background-color: #2f2d52;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .userChatInfo {
+        span {
+          font-weight: 500;
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+          color: lightgrey;
+        }
+      }
+    }
   }
 
   .chat {
     flex: 2;
+
+    .chatInfo {
+      height: 33px;
+      background-color: #5d5bBd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px;
+      color: lightblue;
+
+      .chatIcons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
-
-.sidebar {}
