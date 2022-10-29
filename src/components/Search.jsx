@@ -1,4 +1,5 @@
 import React from 'react'
+import profile from '../images/profile.png'
 
 export const Search = () => {
     return (
@@ -7,9 +8,9 @@ export const Search = () => {
                 <input type="text" name="" placeholder='Find user' id="" />
             </div>
             <div className='userChat'>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8-qoEu8CufLRikenolkGsWfU8deYoArcacQBtKn1rPQ&s" alt="" />
+                <img src={profile} alt="" />
                 <div className="userChatInfo">
-                    <span>Mammootty</span>
+                    <span>Nithin PK</span>
                 </div>
             </div>
         </div>
