@@ -4,7 +4,7 @@
 }
 
 .form-container {
-  background-color: rgb(36, 179, 227);
+  background-color: #5d5bBd;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -24,7 +24,8 @@
     }
 
     .title {
-      font-size: 12px;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
     form {
@@ -36,11 +37,11 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid rgb(36, 179, 227);
+        border-bottom: 1px solid #5d5bBd;
       }
 
       button {
-        background-color: rgb(36, 179, 227);
+        background-color: #5d5bBd;
         color: white;
         padding: 10px;
         font-weight: bold;
