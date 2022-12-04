@@ -14,6 +14,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 
 function App() {
+  //by nithin
   const { currentUser } = useContext(AuthContext)
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
