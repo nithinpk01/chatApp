@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
-import profile from '../images/profile.png'
 import { db } from '../config/firebase';
-import { collection, doc, getDoc, getDocs, query, serverTimestamp, setDoc, updateDoc, where } from 'firebase/firestore';
+import { collection, doc, getDocs, query, serverTimestamp, setDoc, updateDoc, where } from 'firebase/firestore';
 import { AuthContext } from '../context/AuthContext';
 
 export const Search = () => {

@@ -4,10 +4,8 @@ import { Login } from './Login';
 import { Register } from './Register';
 import {
   BrowserRouter as Router,
-  Switch,
   Routes,
   Route,
-  Link,
   Navigate
 } from "react-router-dom";
 import { useContext } from 'react';

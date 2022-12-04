@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from 'react'
 import { useRef } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { ChatContext } from '../context/ChatContext';
-import profile from '../images/profile.png'
 
 export const Message = ({ messages }) => {
   const { currentUser } = useContext(AuthContext);
