@@ -161,6 +161,7 @@
         span {
           font-weight: 500;
           font-size: 18px;
+          text-transform: capitalize;
         }
 
         p {
@@ -183,6 +184,8 @@
       gap: 10px;
       padding: 10px;
       color: lightblue;
+      text-transform: capitalize;
+
 
       .chatIcons {
         display: flex;
