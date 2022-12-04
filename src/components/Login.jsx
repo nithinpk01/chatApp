@@ -22,7 +22,7 @@ export const Login = () => {
     return (
         <div className='form-container'>
             <div className='formWrapper'>
-                <span className='logo'>Chat App</span>
+                <span className='logo'>Nithin's Chat App</span>
                 <span className='title'>Login</span>
                 <form onSubmit={signIn}>
                     <input type="text" name="email" id="" placeholder='Email' />
