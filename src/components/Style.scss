@@ -74,10 +74,16 @@
   height: 80%;
   display: flex;
   overflow: hidden;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 
   .sidebar {
     flex: 1;
     background-color: #3e3c61;
+    // @media screen and (max-width: 400px) {
+    //   width: 100px;
+    // }
 
     .navbar {
       display: flex;
@@ -88,6 +94,9 @@
       .logo {
         font-weight: bold;
         color: #ffff;
+        @media screen and (max-width: 400px) {
+         display: none;
+    }
       }
 
       .user {
@@ -100,6 +109,10 @@
           width: 24px;
           border-radius: 50%;
           object-fit: cover;
+          @media screen and (max-width: 400px) {
+            height: 30px;
+            width: 30px;
+      }
         }
 
         span {
@@ -156,6 +169,10 @@
         height: 50px;
         border-radius: 50%;
         object-fit: cover;
+        @media screen and (max-width: 400px) {
+          width: 30px;
+        height: 30px;
+        }
       }
 
       .userChatInfo {
@@ -163,6 +180,10 @@
           font-weight: 500;
           font-size: 18px;
           text-transform: capitalize;
+          @media screen and (max-width: 400px) {
+            font-size: 15px;
+          }
+
         }
 
         p {
@@ -253,6 +274,9 @@
               background-color: #8da4f1;
               color: white;
               border-radius: 10px 0px 10px 10px;
+              @media screen and (max-width: 400px) {
+                font-size: 14px;
+           }
             }
           }
         }
@@ -273,6 +297,9 @@
         outline: none;
         color: #2f2d52;
         font-size: 18px;
+        @media screen and (max-width: 400px) {
+          font-size: 10px;
+     }
 
         &::placeholder {
           color: grey;
