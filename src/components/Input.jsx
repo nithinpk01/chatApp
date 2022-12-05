@@ -39,10 +39,13 @@ export const Input = () => {
             );
 
         } else {
+
+            if(!text){
+                return;
+            }
             await updateDoc(doc(db, "chats", data.chatId), {
                 messages: arrayUnion({
                     id: uuid(),
-                    text,
                     senderId: currentUser.uid,
                     date: Timestamp.now()
                 })
