@@ -73,11 +73,11 @@ export const Input = () => {
         <div className='input'>
             <input type="text" name="text" placeholder="Type Something" id="" value={text} onChange={e => setText(e.target.value)} />
             <div className="send">
-                <img src={Attachment} alt="" />
-                <input type="file" style={{ display: "none" }} name="file" id="file" onChange={e => setImg(e.target.files[0])} />
+                
+                {/* <input type="file" style={{ display: "none" }} name="file" id="file" onChange={e => setImg(e.target.files[0])} />
                 <label htmlFor="file">
                     <img src={gallery} alt="" />
-                </label>
+                </label> */}
                 <button onClick={sendMessage}>Send</button>
             </div>
         </div>
