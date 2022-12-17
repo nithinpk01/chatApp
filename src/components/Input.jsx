@@ -4,8 +4,8 @@ import React, { useContext, useState } from 'react'
 import { db, storage } from '../config/firebase';
 import { AuthContext } from '../context/AuthContext';
 import { ChatContext } from '../context/ChatContext';
-import Attachment from '../images/attachment.png'
-import gallery from '../images/gallery.png'
+// import Attachment from '../images/attachment.png'
+// import gallery from '../images/gallery.png'
 import { v4 as uuid } from 'uuid';
 export const Input = () => {
     const [text, setText] = useState("");
