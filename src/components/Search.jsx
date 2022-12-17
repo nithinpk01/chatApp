@@ -11,7 +11,8 @@ export const Search = () => {
 
 
     const getUser = async () => {
-        const result = query(collection(db, "users"), where("displayName", "==", username))
+        const uname = username.toLowerCase()
+        const result = query(collection(db, "users"), where("displayName", "==", uname))
         try {
             const querySnap = await getDocs(result);
             querySnap.forEach((doc) => {
@@ -23,7 +24,7 @@ export const Search = () => {
         }
     }
     const searchUser = (e) => {
-        e.code === 'Enter' && getUser();
+        e.code === 'Space' && getUser();
     }
     const selectUser = async () => {
         const combineId = currentUser.uid > user.uuid ? currentUser.uid + user.uuid : user.uuid + currentUser.uid;
