@@ -81,9 +81,10 @@
   .sidebar {
     flex: 1;
     background-color: #3e3c61;
-    // @media screen and (max-width: 400px) {
-    //   width: 100px;
-    // }
+  //  width:100px;
+    @media screen and (max-width: 400px) {
+      width: 100px;
+    }
 
     .navbar {
       display: flex;
