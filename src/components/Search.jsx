@@ -10,7 +10,7 @@ export const Search = () => {
     const currentUser = useContext(AuthContext).currentUser
 
 
-    const getUser = async () => {
+    const getUser = async (e) => {
         const uname = username.toLowerCase()
         const result = query(collection(db, "users"), where("displayName", "==", uname))
         try {
@@ -23,8 +23,13 @@ export const Search = () => {
             setErr(err);
         }
     }
+
+    const findUserbyChange = (e) => {
+        setUsername(e)
+        getUser(e);
+    }
     const searchUser = (e) => {
-        e.code === 'Space' && getUser();
+        // e.code === 'Space' && getUser();
     }
     const selectUser = async () => {
         const combineId = currentUser.uid > user.uuid ? currentUser.uid + user.uuid : user.uuid + currentUser.uid;
@@ -61,7 +66,7 @@ export const Search = () => {
     return (
         <div className='search'>
             <div className='searchForm'>
-                <input type="text" name="" placeholder='Find user' id="" onKeyDown={searchUser} onChange={e => setUsername(e.target.value)} value={username} />
+                <input type="text" name="" placeholder='Find user' id="" onKeyDown={searchUser} onChange={e => findUserbyChange(e.target.value)} value={username} />
             </div>
             {err && <span>User not found</span>}
             {user && <div className='userChat' onClick={selectUser}>
